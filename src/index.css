@@ -57,6 +57,7 @@ body {
 }
 
 .instructions * {
+  text-align: center;
   pointer-events: none;
   user-select: none;
 }

@@ -7,7 +7,7 @@ const CTRL_Y_KEY = "\x19";
 
 function errorHandler(err: Error | any, showToast?: boolean) {
   const message = err?.message || "Ops! Something went wrong.";
-  !showToast && toast.warn("Error: " + message, { toastId: message });
+  !showToast && toast.warn(message, { toastId: message });
   console.warn("Error: " + message);
 }
 
@@ -65,6 +65,7 @@ const CircleStates: React.FC = () => {
       <div ref={circleElement} className="circle hidden"></div>
 
       <div className="instructions">
+        <p>Click anywhere to add a new state</p>
         <p>CTRL + Z = Undo</p>
         <p>CTRL + Y = Redo</p>
       </div>
