@@ -1,0 +1,62 @@
+:root {
+  font-family: consola, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --toastify-color-warning: #585858;
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-text-color-warning: #fff;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle {
+  background-color: rgb(66, 66, 66);
+  border: rgb(182, 182, 182) solid 2px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.toast-body {
+  font-size: 14px;
+}
+
+.instructions {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.instructions * {
+  pointer-events: none;
+  user-select: none;
+}
